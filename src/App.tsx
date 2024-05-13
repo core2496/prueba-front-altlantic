@@ -4,7 +4,6 @@ import ImageListItem from "@mui/material/ImageListItem";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Unstable_Grid2";
 import { useQuery } from "@tanstack/react-query";
-// import { useEffect } from "react";
 import "./App.css";
 import { GetPokemonByIdApi, GetPokemonListApi } from "./services/pokemon.service";
 import { useRef, useCallback, useState } from "react";
