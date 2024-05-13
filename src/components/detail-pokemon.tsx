@@ -14,6 +14,9 @@ export const DetailPokemon: React.FC<Props> = (props) => {
 
   return (
     <Box my={2} display="block" alignItems="center" gap={4} p={4} sx={{ border: "1px solid grey" }}>
+      <Box display="flex" justifyContent="center">
+        <img src={props.data.sprites.front_default} alt={props.data.name} loading="lazy" height={150} width={150} />
+      </Box>
       <Box display="flex">
         <Typography variant="button" display="block" gutterBottom width={200} fontWeight="bold" fontSize={24}>
           Id
@@ -51,7 +54,7 @@ export const DetailPokemon: React.FC<Props> = (props) => {
           CAPTURADO
         </Typography>
         <Typography variant="button" display="block" gutterBottom fontSize={18}>
-          RESPUESTA
+          No
         </Typography>
       </Box>
       <Box display="flex" justifyContent="center" mt={2}>
